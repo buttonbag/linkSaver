@@ -15,7 +15,36 @@
 		</nav>
 
 		<div class="container">
-			<div class="panel" id="addLinkPanel"></div>
+			<div class="panel" id="addLinkPanel">
+				<h3 class="panel-heading">Add Link</h3>
+
+				<form id="addLinkForm">
+					<input
+						type="text"
+						name="title"
+						id="linkTitle"
+						class="form-control"
+						placeholder="Title"
+					/>
+					<input
+						type="text"
+						name="url"
+						id="linkUrl"
+						class="form-control"
+						placeholder="URL"
+					/>
+					<input
+						type="text"
+						name="category"
+						id="linkCategory"
+						class="form-control"
+						placeholder="Categories (coma separated)"
+					/>
+					<div id="addedCategories"></div>
+					<input type="submit" value="Submit" id="submitBtn" />
+					<input type="submit" value="Cancel" id="cancelBtn" />
+				</form>
+			</div>
 			<div id="linkList"></div>
 		</div>
 
